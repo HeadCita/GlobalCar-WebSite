@@ -192,7 +192,7 @@ body {
     color: rgb(240, 181, 51);
 }
 
-.banner-content .mensaje p {
+.banner-content .mensaje h2 {
     display: none;
     color: #fff;
     margin-top: 1rem;
@@ -1575,8 +1575,12 @@ section.category-description ul li:before{
         color: rgb(240, 181, 51);
     }
 
-    .banner-content .mensaje p {
+    .banner-content .mensaje h2 {
         display: block;
+        text-align: right;
+        font-size: 1em;
+        margin-bottom: 0;
+        font-weight: normal;
     }
 
     .banner-content .mensaje .botones {
