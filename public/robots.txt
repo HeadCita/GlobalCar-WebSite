@@ -1,2 +1,10 @@
 User-agent: Googlebot
+Disallow: /css/
+Disallow: /js/
+Disallow: /googled342d7558c31cde7.html 
 User-agent: *
+Disallow: /css/
+Disallow: /js/
+Disallow: /googled342d7558c31cde7.html 
+
+Sitemap: http://example.com/ubicacion_sitemap.xml
