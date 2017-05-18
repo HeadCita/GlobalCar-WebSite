@@ -129,34 +129,34 @@
 const localesLink = document.getElementById("locales-link"),
 		localSection = document.getElementById("locales");
 
-	let localesAltura = localesSection.offsetHeight;
-	let flagLocales = true;
+	let localesAltura = localSection.offsetTop;
+	// let flagLocales = true;
 	localesLink.addEventListener('click', () => {
-		if (flagLocales) {
-			menuHeight(document.body, localesAltura, 500);
-			flagLocales = false;
-		} else {
-			//menu.style.maxHeight = 0;
-			//menuHeight(document.body, 0, 500);
-			flagLocales = true;
-		}	
+		menuHeight(localesLink, localesAltura, 700);
+		menu.style.maxHeight = 0;
+		// if (flagLocales) {
+		// 	menuHeight(localesLink, localesAltura, 700);
+		// 	flagLocales = false;
+		// } else {
+		// 	//menu.style.maxHeight = 0;
+		// 	//menuHeight(document.body, 0, 500);
+		// 	flagLocales = true;
+		// }	
+	})
 
 })();
 
 
-
-
 function menuHeight(element, hasta, duracion) {
 
-	let inicio = document.body.offsetTop,
+	let inicio = element.offsetTop,
             recorrido = hasta - inicio,
             velocidad = 0,
             incremento = 20;
-
         let animacion = () => {
             velocidad += incremento;
             let val = Math.easeInOutQuad(velocidad, inicio, recorrido, duracion);
-            document.body.scrollTop = `${val}`;
+            document.body.scrollTop = val;
 
             if (velocidad < duracion) {
                 setTimeout(animacion, incremento);
