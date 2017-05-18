@@ -6,7 +6,6 @@
 		//Mapa no-scroll
 	const mapContainers = Array.prototype.slice.apply(document.querySelectorAll('.contact-local .local.map'));		;
 	const maps = Array.prototype.slice.apply(document.querySelectorAll('.contact-local .local.map iframe'));
-	console.log(mapContainers);
 	mapContainers[0].addEventListener('click', () => {
 		maps[0].style.pointerEvents = 'auto';
 	});
@@ -113,7 +112,6 @@
 		});
 
 	} else {
-		console.log(mq.matches);
 		
 		subMenu1.style.left = "0";
 		subMenu2.style.left = "0";

@@ -4,12 +4,10 @@
 	const slider = document.querySelector('#slider'),
 		next = document.querySelector('#btn-next'),
 		prev = document.querySelector('#btn-prev');
-	console.log("hola");
 
 	slider.insertBefore(slider.lastElementChild, slider.firstElementChild);
 	slider.style.marginLeft="-33.3%";
 	let i=2;
-	console.log(slider.children[3]);
 	slider.children[i].classList.add("focus");
 
 	function testimonyRigth(){
