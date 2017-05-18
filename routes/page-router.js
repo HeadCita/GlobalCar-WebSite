@@ -25,7 +25,6 @@ router
 	.get('/categorias/aiiia', pc.getCategoryAiiia)
 	.get('/categorias/aiiib', pc.getCategoryAiiib)
 	.get('/categorias/aiiic', pc.getCategoryAiiic)
-	.get('/locales', pc.getLocales)
 	.get('/contacto', pc.getContacto)
 	.get('/galeria', pc.getGaleria)
 
