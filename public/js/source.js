@@ -122,6 +122,23 @@
 	}
 
 
+/*	SCROLL LOCALES  */
+
+const localesLink = document.getElementById("locales-link"),
+		localSection = document.getElementById("locales");
+
+	let localesAltura = localesSection.offsetHeight;
+	let flagLocales = true;
+	localesLink.addEventListener('click', () => {
+		if (flagLocales) {
+			menuHeight(document.body, localesAltura, 500);
+			flagLocales = false;
+		} else {
+			//menu.style.maxHeight = 0;
+			//menuHeight(document.body, 0, 500);
+			flagLocales = true;
+		}	
+
 })();
 
 
@@ -129,7 +146,7 @@
 
 function menuHeight(element, hasta, duracion) {
 
-	let inicio = element.offsetHeight,
+	let inicio = document.body.offsetTop,
             recorrido = hasta - inicio,
             velocidad = 0,
             incremento = 20;
@@ -137,7 +154,7 @@ function menuHeight(element, hasta, duracion) {
         let animacion = () => {
             velocidad += incremento;
             let val = Math.easeInOutQuad(velocidad, inicio, recorrido, duracion);
-            element.style.height = `${val}px`;
+            document.body.scrollTop = `${val}`;
 
             if (velocidad < duracion) {
                 setTimeout(animacion, incremento);
