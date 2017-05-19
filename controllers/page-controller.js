@@ -5,7 +5,7 @@
 class PageController{
 	getHome(req, res, next){
 		res.render('home',{
-			title: "Global Car: escuela de manejo para obtener tu brevete.",
+			title: "Global Car: Escuela de manejo para obtener tu brevete.",
 			description: "Global Car es tu mejor opción como escuela de manejo y te brinda asesoramiento total para el trámite de tu brevete."
 		});
 	}
