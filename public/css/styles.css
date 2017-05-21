@@ -487,9 +487,9 @@ body {
     position: absolute;
     top: -50%;
 }
-.section-contact .contact-local.reverse .local.title h4:before{
+/*.section-contact .contact-local.reverse .local.title h4:before{
     right: 0;
-}
+}*/
 .section-contact .contact-local .local.map{
     flex-basis: 50%;
 }
@@ -1186,9 +1186,9 @@ section.category-description ul li:before{
         height: auto;
         flex-basis: 25%;
     }
-    .section-contact .contact-local.reverse{
+    /*.section-contact .contact-local.reverse{
         flex-direction: row-reverse;
-    }
+    }*/
 
     /* 2.1.8 Footer-->*/
     footer .footer-body{
